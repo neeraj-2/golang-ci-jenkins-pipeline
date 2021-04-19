@@ -10,8 +10,6 @@ node {
         
             stage 'preTest'
             bat 'go version'
-            bat 'go get -u github.com/golang/dep/...'
-            bat 'dep init'
             
             stage 'Test'
             bat 'go vet'
